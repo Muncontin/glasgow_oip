@@ -1,7 +1,39 @@
 ---
-title: "glasgow_oip"
+title: "Accessible Tours"
+format: html
+page-layout: full
 ---
 
-This is a Quarto website.
+# Embracing Inclusivity in Nature
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![](images/botanic-gardens.jpg){width=100%}
+
+Our tours at the **Glasgow Botanic Gardens** are designed with **everyone in mind**, ensuring a welcoming environment for the deaf and blind communities. We offer tactile maps and guided tours with sign language interpreters to create an enriching experience, allowing everyone to enjoy the beauty of nature.
+
+---
+
+## 🦯 Brailled Pathwalk & Text
+
+![](images/braille-path.jpg){width=50% align=left}
+
+To enhance navigation for the blind and visually impaired, we propose installing **braille signage** and **textured pathwalks** throughout key garden routes. These raised tactile surfaces will guide users safely along designated trails and toward points of interest.
+
+By including braille descriptions near plant displays, sculptures, and garden features, visitors can independently engage with the space using **touch-based cues**—making the garden more inclusive for all.
+
+---
+
+## 📱 QR Codes & BSL Video Translations
+
+![](images/qr-code.jpg){width=50% align=left}
+
+Some trees and plants already have existing QR codes that lead users to a webpage with detailed information.
+
+We can improve accessibility by adding **British Sign Language (BSL)** translations to these webpages. Each QR code will link to a page with an optional **miniplayer video** translation of the content, enhancing inclusion for deaf visitors.
+
+---
+
+### 💬 Celebrate Accessibility & Inclusivity
+
+Join us in celebrating **accessibility and inclusivity** at our beautiful gardens!
+
+Visit: [glasgowbotanicgardens.com](https://glasgowbotanicgardens.com)
