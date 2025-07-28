@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasgow Botanic Gardens Accessibility Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-placeholder">🌿</div>
+                <h1>Glasgow Botanic Gardens<br><span class="subtitle">Accessibility Enhancement Project</span></h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#introduction">Overview</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#design-journey">Process</a>
+                <a href="#poster">Poster</a>
+                <a href="#team">Team</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="introduction">
+        <div class="intro-content">
+            <h2>Enhancing Accessibility Through Innovation</h2>
+            <p>Our team developed comprehensive braille and digital accessibility solutions for Glasgow Botanic Gardens, making botanical education accessible to visually impaired visitors through tactile guides, enhanced signage, and digital integration.</p>
+            <div class="project-highlights">
+                <div class="highlight">
+                    <h3>🤲 Tactile Solutions</h3>
+                    <p>Braille guidebooks and enhanced signage</p>
+                </div>
+                <div class="highlight">
+                    <h3>📱 Digital Integration</h3>
+                    <p>QR codes and accessible web interfaces</p>
+                </div>
+                <div class="highlight">
+                    <h3>🌱 Botanical Focus</h3>
+                    <p>Plant identification and educational content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="solutions">
+        <h2>Our Accessibility Solutions</h2>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <img src="images/brailleguidebook.png" alt="Braille Botanical Art Guide showing Monstera plant with braille text" onclick="openModal(this)">
+                <div class="solution-content">
+                    <h3>Braille Guidebook</h3>
+                    <p>Comprehensive botanical art guide featuring braille descriptions of plants including Monstera, herbs, sunflower, and Japanese Maple. Provides tactile learning experience for visually impaired visitors.</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <img src="images/braillesign.png" alt="Enhanced signage with braille text for Corsican Pine identification" onclick="openModal(this)">
+                <div class="solution-content">
+                    <h3>Enhanced Signage</h3>
+                    <p>Upgraded existing plant identification signs with braille text. Example shows Corsican Pine (Pinus nigra ssp. laricio) with QR code integration for additional digital accessibility.</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <img src="images/new website.png" alt="Accessible website design for Friends of Glasgow Botanic Gardens" onclick="openModal(this)">
+                <div class="solution-content">
+                    <h3>Digital Platform</h3>
+                    <p>Redesigned website interface following accessibility standards, featuring clear navigation, botanical information, and integration with physical braille solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-journey">
+        <h2>Design Process & Research</h2>
+        <div class="journey-gallery">
+            <img src="images/botanic-gardens.jpg" alt="Glasgow Botanic Gardens - Research location and inspiration" onclick="openModal(this)">
+            <img src="images/photo_2025-07-24_14-32-54.jpg" alt="Team collaboration and ideation process" onclick="openModal(this)">
+            <img src="images/photo_2025-07-24_14-32-55.jpg" alt="Design development and prototyping phase" onclick="openModal(this)">
+        </div>
+        <p>Our design process began with extensive research at Glasgow Botanic Gardens, understanding the needs of visually impaired visitors, and developing user-centered solutions that bridge physical and digital accessibility.</p>
+    </section>
+    <section id="poster">
+        <h2>Project Poster</h2>
+        <object data="Team 3 Poster.pdf" type="application/pdf" width="100%" height="600px">
+            <p>Your browser does not support PDFs. <a href="Team 3 Poster.pdf">Download the poster here.</a></p>
+        </object>
+        <p><a href="Team 3 Poster.pdf" download>Download Poster (PDF)</a></p>
+    </section>
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-intro">
+            <p>Our multidisciplinary team brought together diverse perspectives in design, accessibility, technology, and user experience to create comprehensive solutions for Glasgow Botanic Gardens.</p>
+        </div>
+        <ul>
+            <li>Mark</li>
+            <li>Mun Tat</li>
+            <li>Zulhairi</li>
+            <li>Jun Hong</li>
+            <li>Yu Heng</li>
+            <li>Daniel</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Glasgow OIP Team</p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
