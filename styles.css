@@ -1160,18 +1160,79 @@ footer {
 .portfolio-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 3rem;
+    margin: 3rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
 }
 
 .portfolio-item {
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(74, 124, 89, 0.15);
     overflow: hidden;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(74, 124, 89, 0.1);
+    position: relative;
+}
+
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6b9b7a, #4a7c59);
+    border-radius: 20px 20px 0 0;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(74, 124, 89, 0.25);
+}
+
+.portfolio-item h3 {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    background: linear-gradient(135deg, #4a7c59, #3a6249);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.video-container {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.02);
 }
 
 .video-placeholder {
@@ -1183,22 +1244,47 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 200px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    background-size: 30px 30px;
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    100% { transform: translateY(-30px) translateX(-30px); }
 }
 
 .video-placeholder p {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
 }
 
 .video-placeholder span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
 }
 
 .portfolio-content {
-    padding: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    background: white;
 }
 
 .portfolio-content h4 {
@@ -1742,17 +1828,51 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .portfolio-grid {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
     .portfolio-item {
         grid-template-columns: 1fr;
+        border-radius: 16px;
+    }
+
+    .portfolio-item h3 {
+        position: static;
+        margin: 0;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        border-radius: 16px 16px 0 0;
+        background: linear-gradient(135deg, #4a7c59, #3a6249);
+        box-shadow: none;
+    }
+
+    .video-container {
+        padding: 1.5rem;
+        min-height: 250px;
+    }
+
+    .video-container iframe {
+        height: 200px;
+        max-width: 100%;
     }
     
     .video-placeholder {
-        min-height: 150px;
+        min-height: 250px;
         padding: 1.5rem;
+    }
+
+    .video-placeholder p {
+        font-size: 1.4rem;
+    }
+
+    .video-placeholder span {
+        font-size: 0.9rem;
     }
     
     .portfolio-content {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
     }
     
     .briefs-content {
