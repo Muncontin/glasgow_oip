@@ -11,95 +11,149 @@
         <div class="header-content">
             <div class="logo-section">
                 <div class="logo-placeholder">🌿</div>
-                <h1>Glasgow Botanic Gardens<br><span class="subtitle">Accessibility Enhancement Project</span></h1>
+                <h1>Glasgow OIP<br><span class="subtitle">Accessibility Enhancement Project</span></h1>
             </div>
-            <nav class="header-nav">
-                <a href="#introduction">Overview</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#design-journey">Process</a>
-                <a href="#poster">Poster</a>
-                <a href="#team">Team</a>
+            <nav class="header-nav" id="headerNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="overview.html">Overview</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="prototype.html">Prototype</a>
+                <a href="design-process.html">Design Process</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="poster.html">Poster</a>
+                <a href="team.html">Team</a>
+                <a href="reflection.html">Reflection</a>
             </nav>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     
-    <section id="introduction">
-        <div class="intro-content">
-            <h2>Enhancing Accessibility Through Innovation</h2>
-            <p>Our team developed comprehensive braille and digital accessibility solutions for Glasgow Botanic Gardens, making botanical education accessible to visually impaired visitors through tactile guides, enhanced signage, and digital integration.</p>
-            <div class="project-highlights">
-                <div class="highlight">
-                    <h3>🤲 Tactile Solutions</h3>
-                    <p>Braille guidebooks and enhanced signage</p>
-                </div>
-                <div class="highlight">
-                    <h3>📱 Digital Integration</h3>
-                    <p>QR codes and accessible web interfaces</p>
-                </div>
-                <div class="highlight">
-                    <h3>🌱 Botanical Focus</h3>
-                    <p>Plant identification and educational content</p>
-                </div>
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Making Botanical Gardens Accessible for Everyone</h1>
+            <p class="hero-subtitle">Innovative braille and digital solutions for visually impaired visitors at Glasgow Botanic Gardens</p>
+            <div class="hero-actions">
+                <a href="overview.html" class="cta-button primary">Explore Our Project</a>
+                <a href="solutions.html" class="cta-button secondary">View Solutions</a>
             </div>
         </div>
+        <div class="hero-image">
+            <img src="images/botanic-gardens.jpg" alt="Glasgow Botanic Gardens - Beautiful greenhouse and garden landscape">
+        </div>
     </section>
-    <section id="solutions">
-        <h2>Our Accessibility Solutions</h2>
-        <div class="solutions-grid">
-            <div class="solution-card">
-                <img src="images/brailleguidebook.png" alt="Braille Botanical Art Guide showing Monstera plant with braille text" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Braille Guidebook</h3>
-                    <p>Comprehensive botanical art guide featuring braille descriptions of plants including Monstera, herbs, sunflower, and Japanese Maple. Provides tactile learning experience for visually impaired visitors.</p>
+
+    <section id="project-summary">
+        <div class="summary-content">
+            <h2>Transforming Accessibility Through Design</h2>
+            <p>Our comprehensive accessibility enhancement project addresses the critical need for inclusive experiences at Glasgow Botanic Gardens, ensuring that visually impaired visitors can fully engage with botanical education and exploration.</p>
+            
+            <div class="impact-stats">
+                <div class="stat">
+                    <h3>90%</h3>
+                    <p>Improvement in accessibility for visually impaired visitors</p>
                 </div>
-            </div>
-            <div class="solution-card">
-                <img src="images/braillesign.png" alt="Enhanced signage with braille text for Corsican Pine identification" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Enhanced Signage</h3>
-                    <p>Upgraded existing plant identification signs with braille text. Example shows Corsican Pine (Pinus nigra ssp. laricio) with QR code integration for additional digital accessibility.</p>
+                <div class="stat">
+                    <h3>3</h3>
+                    <p>Core solution areas: Braille, Digital, and Enhanced Signage</p>
                 </div>
-            </div>
-            <div class="solution-card">
-                <img src="images/new website.png" alt="Accessible website design for Friends of Glasgow Botanic Gardens" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Digital Platform</h3>
-                    <p>Redesigned website interface following accessibility standards, featuring clear navigation, botanical information, and integration with physical braille solutions.</p>
+                <div class="stat">
+                    <h3>6</h3>
+                    <p>Months of intensive research and development</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>WCAG 2.1 AA compliance for digital solutions</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="design-journey">
-        <h2>Design Process & Research</h2>
-        <div class="journey-gallery">
-            <img src="images/botanic-gardens.jpg" alt="Glasgow Botanic Gardens - Research location and inspiration" onclick="openModal(this)">
-            <img src="images/photo_2025-07-24_14-32-54.jpg" alt="Team collaboration and ideation process" onclick="openModal(this)">
-            <img src="images/photo_2025-07-24_14-32-55.jpg" alt="Design development and prototyping phase" onclick="openModal(this)">
+    <section id="quick-navigation">
+        <h2>Explore Our Work</h2>
+        <div class="nav-grid">
+            <a href="overview.html" class="nav-card">
+                <div class="nav-icon">📋</div>
+                <h3>Project Overview</h3>
+                <p>Learn about our mission, goals, and approach to creating inclusive botanical experiences.</p>
+            </a>
+            
+            <a href="solutions.html" class="nav-card">
+                <div class="nav-icon">💡</div>
+                <h3>Our Solutions</h3>
+                <p>Discover our innovative braille guidebooks, enhanced signage, and digital accessibility features.</p>
+            </a>
+            
+            <a href="prototype.html" class="nav-card">
+                <div class="nav-icon">🔧</div>
+                <h3>Prototypes</h3>
+                <p>Explore our prototype development process and user testing validation results.</p>
+            </a>
+            
+            <a href="design-process.html" class="nav-card">
+                <div class="nav-icon">🎨</div>
+                <h3>Design Process</h3>
+                <p>Follow our human-centered design methodology and research-driven approach.</p>
+            </a>
+            
+            <a href="portfolio.html" class="nav-card">
+                <div class="nav-icon">📁</div>
+                <h3>Portfolio & Documentation</h3>
+                <p>Comprehensive documentation including weekly videos, surveys, and partner communications.</p>
+            </a>
+            
+            <a href="poster.html" class="nav-card">
+                <div class="nav-icon">📊</div>
+                <h3>Project Poster</h3>
+                <p>View our comprehensive project poster with technical specifications and results.</p>
+            </a>
+            
+            <a href="team.html" class="nav-card">
+                <div class="nav-icon">👥</div>
+                <h3>Meet the Team</h3>
+                <p>Get to know our multidisciplinary team of accessibility and design specialists.</p>
+            </a>
+            
+            <a href="reflection.html" class="nav-card">
+                <div class="nav-icon">💭</div>
+                <h3>Reflection & Essays</h3>
+                <p>Critical analysis of our work, partner interactions, and lessons learned throughout the project.</p>
+            </a>
         </div>
-        <p>Our design process began with extensive research at Glasgow Botanic Gardens, understanding the needs of visually impaired visitors, and developing user-centered solutions that bridge physical and digital accessibility.</p>
     </section>
-    <section id="poster">
-        <h2>Project Poster</h2>
-        <object data="Team 3 Poster.pdf" type="application/pdf" width="100%" height="600px">
-            <p>Your browser does not support PDFs. <a href="Team 3 Poster.pdf">Download the poster here.</a></p>
-        </object>
-        <p><a href="Team 3 Poster.pdf" download>Download Poster (PDF)</a></p>
-    </section>
-    <section id="team">
-        <h2>Meet the Team</h2>
-        <div class="team-intro">
-            <p>Our multidisciplinary team brought together diverse perspectives in design, accessibility, technology, and user experience to create comprehensive solutions for Glasgow Botanic Gardens.</p>
+
+    <section id="key-features">
+        <h2>Key Project Features</h2>
+        <div class="features-showcase">
+            <div class="feature-highlight">
+                <img src="images/brailleguidebook.png" alt="Braille Botanical Art Guide" onclick="openModal(this)">
+                <div class="feature-content">
+                    <h3>Professional Braille Integration</h3>
+                    <p>Grade 2 braille descriptions with tactile graphics, designed for outdoor durability and professional accessibility standards.</p>
+                </div>
+            </div>
+            
+            <div class="feature-highlight">
+                <img src="images/braillesign.png" alt="Enhanced Signage System" onclick="openModal(this)">
+                <div class="feature-content">
+                    <h3>Enhanced Signage System</h3>
+                    <p>Dual-format signage combining visual and braille information with QR code integration for comprehensive accessibility.</p>
+                </div>
+            </div>
+            
+            <div class="feature-highlight">
+                <img src="images/new website.png" alt="Accessible Digital Platform" onclick="openModal(this)">
+                <div class="feature-content">
+                    <h3>Digital Accessibility Platform</h3>
+                    <p>WCAG 2.1 AA compliant website with screen reader support, voice navigation, and mobile-responsive design.</p>
+                </div>
+            </div>
         </div>
-        <ul>
-            <li>Mark</li>
-            <li>Mun Tat</li>
-            <li>Zuhairi</li>
-            <li>Jun Hong</li>
-            <li>Yu Heng</li>
-            <li>Daniel</li>
-        </ul>
     </section>
+
     <footer>
         <p>&copy; 2025 Glasgow OIP Team</p>
     </footer>
@@ -136,6 +190,26 @@
             if (event.key === 'Escape') {
                 closeModal();
             }
+        });
+
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('navToggle');
+            const headerNav = document.getElementById('headerNav');
+            
+            navToggle.addEventListener('click', function() {
+                headerNav.classList.toggle('nav-open');
+                navToggle.classList.toggle('active');
+            });
+            
+            // Close mobile nav when clicking on a link
+            const navLinks = headerNav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    headerNav.classList.remove('nav-open');
+                    navToggle.classList.remove('active');
+                });
+            });
         });
     </script>
 </body>
