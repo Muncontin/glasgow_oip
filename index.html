@@ -5,37 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glasgow Botanic Gardens Accessibility Project</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo-placeholder">🌿</div>
-                <h1>Glasgow OIP<br><span class="subtitle">Accessibility Enhancement Project</span></h1>
-            </div>
-            <nav class="header-nav" id="headerNav">
-                <a href="index.html" class="active">Home</a>
-                <a href="overview.html">Overview</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="prototype.html">Prototype</a>
-                <a href="design-process.html">Design Process</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="poster.html">Poster</a>
-                <a href="team.html">Team</a>
-                <a href="reflection.html">Reflection</a>
-            </nav>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+    <div id="navbar-placeholder"></div>
     
     <section id="hero">
         <div class="hero-content">
             <h1 class="hero-title">Making Botanical Gardens Accessible for Everyone</h1>
-            <p class="hero-subtitle">Innovative braille and digital solutions for visually impaired visitors at Glasgow Botanic Gardens</p>
+            <p class="hero-subtitle">Innovative braille and digital solutions for both visually and hearing impaired visitors at Glasgow Botanic Gardens</p>
             <div class="hero-actions">
                 <a href="overview.html" class="cta-button primary">Explore Our Project</a>
                 <a href="solutions.html" class="cta-button secondary">View Solutions</a>
@@ -50,25 +28,6 @@
         <div class="summary-content">
             <h2>Transforming Accessibility Through Design</h2>
             <p>Our comprehensive accessibility enhancement project addresses the critical need for inclusive experiences at Glasgow Botanic Gardens, ensuring that visually impaired visitors can fully engage with botanical education and exploration.</p>
-            
-            <div class="impact-stats">
-                <div class="stat">
-                    <h3>90%</h3>
-                    <p>Improvement in accessibility for visually impaired visitors</p>
-                </div>
-                <div class="stat">
-                    <h3>3</h3>
-                    <p>Core solution areas: Braille, Digital, and Enhanced Signage</p>
-                </div>
-                <div class="stat">
-                    <h3>6</h3>
-                    <p>Months of intensive research and development</p>
-                </div>
-                <div class="stat">
-                    <h3>100%</h3>
-                    <p>WCAG 2.1 AA compliance for digital solutions</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -131,7 +90,7 @@
             <div class="feature-highlight">
                 <img src="images/brailleguidebook.png" alt="Braille Botanical Art Guide" onclick="openModal(this)">
                 <div class="feature-content">
-                    <h3>Professional Braille Integration</h3>
+                    <h3>Dedicated Braille Guidebook</h3>
                     <p>Grade 2 braille descriptions with tactile graphics, designed for outdoor durability and professional accessibility standards.</p>
                 </div>
             </div>
@@ -147,16 +106,14 @@
             <div class="feature-highlight">
                 <img src="images/new website.png" alt="Accessible Digital Platform" onclick="openModal(this)">
                 <div class="feature-content">
-                    <h3>Digital Accessibility Platform</h3>
-                    <p>WCAG 2.1 AA compliant website with screen reader support, voice navigation, and mobile-responsive design.</p>
+                    <h3>Additional BSL support for the website</h3>
+                    <p>Implementing BSL videos in the Friends of the Gardens Tree Trail website to accomodate those who prefer BSL descriptions.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Glasgow OIP Team</p>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- Image Modal -->
     <div id="imageModal" class="modal">
@@ -192,25 +149,6 @@
             }
         });
 
-        // Mobile navigation toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const navToggle = document.getElementById('navToggle');
-            const headerNav = document.getElementById('headerNav');
-            
-            navToggle.addEventListener('click', function() {
-                headerNav.classList.toggle('nav-open');
-                navToggle.classList.toggle('active');
-            });
-            
-            // Close mobile nav when clicking on a link
-            const navLinks = headerNav.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    headerNav.classList.remove('nav-open');
-                    navToggle.classList.remove('active');
-                });
-            });
-        });
     </script>
 </body>
 </html>

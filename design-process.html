@@ -5,32 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Process - Glasgow Botanic Gardens Accessibility Project</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="navbar.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo-placeholder">🌿</div>
-                <h1>Glasgow OIP<br><span class="subtitle">Accessibility Enhancement Project</span></h1>
-            </div>
-            <nav class="header-nav" id="headerNav">
-                <a href="index.html">Home</a>
-                <a href="overview.html">Overview</a>
-                <a href="solutions.html">Solutions</a>
-                <a href="prototype.html">Prototype</a>
-                <a href="design-process.html" class="active">Design Process</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="poster.html">Poster</a>
-                <a href="team.html">Team</a>
-                <a href="reflection.html">Reflection</a>
-            </nav>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+    <div id="navbar-placeholder"></div>
     
     <section id="process-overview">
         <div class="intro-content">
@@ -218,9 +196,7 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Glasgow OIP Team</p>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- Image Modal -->
     <div id="imageModal" class="modal">
@@ -256,25 +232,6 @@
             }
         });
 
-        // Mobile navigation toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const navToggle = document.getElementById('navToggle');
-            const headerNav = document.getElementById('headerNav');
-            
-            navToggle.addEventListener('click', function() {
-                headerNav.classList.toggle('nav-open');
-                navToggle.classList.toggle('active');
-            });
-            
-            // Close mobile nav when clicking on a link
-            const navLinks = headerNav.querySelectorAll('a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    headerNav.classList.remove('nav-open');
-                    navToggle.classList.remove('active');
-                });
-            });
-        });
     </script>
 </body>
 </html>
