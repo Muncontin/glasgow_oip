@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions - Glasgow Botanic Gardens Accessibility Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="navbar.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="navbar-placeholder"></div>
-    
+
     <section id="solutions">
-        <h2>Our Accessibility Solutions</h2>
-        <div class="solutions-grid">
-            <div class="solution-card">
-                <img src="images/brailleguidebook.png" alt="Braille Botanical Art Guide showing Monstera plant with braille text" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Braille Guidebook</h3>
-                    <p>Comprehensive botanical art guide featuring braille descriptions of plants including Monstera, herbs, sunflower, and Japanese Maple. Provides tactile learning experience for visually impaired visitors.</p>
-                </div>
-            </div>
-            <div class="solution-card">
-                <img src="images/braillesign.png" alt="Enhanced signage with braille text for Corsican Pine identification" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Enhanced Signage</h3>
-                    <p>Upgraded existing plant identification signs with braille text. Example shows Corsican Pine (Pinus nigra ssp. laricio) with QR code integration for additional digital accessibility.</p>
-                </div>
-            </div>
-            <div class="solution-card">
-                <img src="images/new website.png" alt="Accessible website design for Friends of Glasgow Botanic Gardens" onclick="openModal(this)">
-                <div class="solution-content">
-                    <h3>Digital Platform</h3>
-                    <p>Redesigned website interface following accessibility standards, featuring clear navigation, botanical information, and integration with physical braille solutions.</p>
-                </div>
-            </div>
+      <h2>Our Accessibility Solutions</h2>
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <img
+            src="images/brailleguidebook.png"
+            alt="Braille Botanical Art Guide showing Monstera plant with braille text"
+            onclick="openModal(this)"
+          />
+          <div class="solution-content">
+            <h3>Braille Guidebook</h3>
+            <p>
+              Comprehensive botanical art guide featuring braille descriptions
+              of plants including Monstera, herbs, sunflower, and Japanese
+              Maple. Provides tactile learning experience for visually impaired
+              visitors.
+            </p>
+          </div>
         </div>
+        <div class="solution-card">
+          <img
+            src="images/braillesign.png"
+            alt="Enhanced signage with braille text for Corsican Pine identification"
+            onclick="openModal(this)"
+          />
+          <div class="solution-content">
+            <h3>Enhanced Signage</h3>
+            <p>
+              Upgraded existing plant identification signs with braille text.
+              Example shows Corsican Pine (Pinus nigra ssp. laricio) with QR
+              code integration for additional digital accessibility.
+            </p>
+          </div>
+        </div>
+        <div class="solution-card">
+          <a href="corsican-pine.html">
+            <img
+              src="images/new website.png"
+              alt="Accessible website design for
+          Friends of Glasgow Botanic Gardens"
+            />
+          </a>
+          <div class="solution-content">
+            <h3>Digital Platform</h3>
+            <p>
+              Redesigned website interface following accessibility standards,
+              featuring clear navigation, botanical information, and integration
+              with physical braille solutions.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div id="footer-placeholder"></div>
 
     <!-- Image Modal -->
     <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
     </div>
 
     <script>
-        function openModal(img) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImg.src = img.src;
-            modalImg.alt = img.alt;
+      function openModal(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Close modal when clicking outside the image
+      window.onclick = function (event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
         }
+      };
 
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeModal();
         }
-
-        // Close modal when clicking outside the image
-        window.onclick = function(event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-
+      });
     </script>
-</body>
+  </body>
 </html>
