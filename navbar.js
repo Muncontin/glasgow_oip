@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="index.html" data-page="index">Home</a>
                     <a href="overview.html" data-page="overview">Overview</a>
                     <a href="solutions.html" data-page="solutions">Solutions</a>
-                    <a href="prototype.html" data-page="prototype">Prototype</a>
                     <a href="design-process.html" data-page="design-process">Design Process</a>
                     <a href="portfolio.html" data-page="portfolio">Portfolio</a>
                     <a href="poster.html" data-page="poster">Poster</a>
