@@ -11,46 +11,251 @@
 <body>
     <div id="navbar-placeholder"></div>
     
-    <section id="process-overview">
-        <div class="intro-content">
-            <h2>Design Process & Methodology</h2>
-            <p>Our design process followed a human-centered approach, prioritizing the needs and experiences of visually impaired visitors. Through extensive research, collaboration, and iterative design, we developed comprehensive accessibility solutions for Glasgow Botanic Gardens.</p>
+    <section id="design-hero">
+        <div class="hero-content">
+            <h1 class="design-title">Design Evolution</h1>
+            <p class="design-subtitle">From initial concepts to refined solutions</p>
+
         </div>
     </section>
 
-    <section id="research-phase">
-        <h2>Research & Discovery Phase</h2>
-        <div class="process-grid">
-            <div class="process-card">
-                <img src="images/botanic-gardens.jpg" alt="Glasgow Botanic Gardens - Research location and site analysis" onclick="openModal(this)">
-                <div class="process-content">
-                    <h3>Site Analysis & Context Research</h3>
-                    <p><strong>Research Activities:</strong></p>
-                    <ul>
-                        <li>Comprehensive site mapping and accessibility audit</li>
-                        <li>Analysis of existing signage and information systems</li>
-                        <li>Identification of key botanical areas and visitor pathways</li>
-                        <li>Documentation of current accessibility challenges</li>
-                    </ul>
-                    <p><strong>Key Insights:</strong> The gardens lacked tactile information systems and had inconsistent signage placement, creating barriers for visually impaired visitors.</p>
+    <section id="initial-solutions">
+        <div class="solutions-container">
+            <h2 class="section-title">Initial Solutions</h2>
+            <p class="section-subtitle">Our first approach focused on comprehensive infrastructure changes</p>
+            
+            <div class="initial-grid">
+                <div class="solution-card initial">
+                    <div class="card-header">
+                        <div class="solution-icon">🛤️</div>
+                        <h3>Raised Pathway System</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Elevated tactile pathways with integrated braille maps for navigation</p>
+                        <div class="features-list">
+                            <span class="feature">• Physical infrastructure</span>
+                            <span class="feature">• Tactile navigation</span>
+                            <span class="feature">• Permanent installation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card initial">
+                    <div class="card-header">
+                        <div class="solution-icon">🗺️</div>
+                        <h3>Braille Maps</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Large-scale tactile maps showing garden layout and plant locations</p>
+                        <div class="features-list">
+                            <span class="feature">• Comprehensive mapping</span>
+                            <span class="feature">• Tactile orientation</span>
+                            <span class="feature">• Fixed locations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card initial">
+                    <div class="card-header">
+                        <div class="solution-icon">📱</div>
+                        <h3>QR Codes + New Website</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Custom website with audio content accessible via QR codes</p>
+                        <div class="features-list">
+                            <span class="feature">• Digital platform</span>
+                            <span class="feature">• Audio descriptions</span>
+                            <span class="feature">• Mobile access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research-insights">
+        <div class="research-container">
+            <h2 class="section-title">Research & Discovery</h2>
+            <p class="section-subtitle">Understanding the challenge through site analysis and user engagement</p>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-icon">🏛️</div>
+                        <h3>Site Analysis</h3>
+                    </div>
+                    <div class="research-image">
+                        <img src="images/botanic-gardens.jpg" alt="Glasgow Botanic Gardens - Research location and site analysis" onclick="openModal(this)">
+                    </div>
+                    <div class="research-content">
+                        <div class="key-findings">
+                            <h4>Key Findings</h4>
+                            <div class="finding-item">
+                                <span class="finding-icon">❌</span>
+                                <span>No tactile information systems</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">📍</span>
+                                <span>Inconsistent signage placement</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">🚧</span>
+                                <span>Multiple accessibility barriers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-icon">👥</div>
+                        <h3>User Research</h3>
+                    </div>
+                    <div class="research-visual">
+                        <div class="stakeholder-icons">
+                            <div class="stakeholder-group">
+                                <span class="stakeholder-emoji">🦮</span>
+                                <span class="stakeholder-label">Visually Impaired</span>
+                            </div>
+                            <div class="stakeholder-group">
+                                <span class="stakeholder-emoji">🤟</span>
+                                <span class="stakeholder-label">Hearing Impaired</span>
+                            </div>
+                            <div class="stakeholder-group">
+                                <span class="stakeholder-emoji">🌿</span>
+                                <span class="stakeholder-label">Garden Staff</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-content">
+                        <div class="key-findings">
+                            <h4>Tour Guide Insights</h4>
+                            <div class="finding-item">
+                                <span class="finding-icon">👥</span>
+                                <span>1:5 ratio for impaired visitors</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">🤲</span>
+                                <span>Encourage touching plants & statues</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">⚠️</span>
+                                <span>Safety concerns with poisonous plants</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">🤟</span>
+                                <span>No current deaf visitor support</span>
+                            </div>
+                            <div class="finding-item">
+                                <span class="finding-icon">🦮</span>
+                                <span>Staff trained in blind guidance, but not deaf /span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="evolution-process">
+        <div class="evolution-container">
+            <div class="evolution-arrow-section">
+                <h2 class="evolution-title">Design Evolution</h2>
+                <div class="evolution-flow">
+                    <div class="evolution-step">
+                        <div class="step-icon">🔍</div>
+                        <span>Research</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="evolution-step">
+                        <div class="step-icon">💡</div>
+                        <span>Insights</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="evolution-step">
+                        <div class="step-icon">🔄</div>
+                        <span>Refinement</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="evolution-step">
+                        <div class="step-icon">✨</div>
+                        <span>Final Solution</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="process-card">
-                <div class="research-placeholder">
-                    <h4>User Research</h4>
-                    <p>👥 Stakeholder Interviews</p>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h4>💰 Cost Constraints</h4>
+                    <p>Raised pathways required significant infrastructure investment</p>
                 </div>
-                <div class="process-content">
-                    <h3>Stakeholder Engagement</h3>
-                    <p><strong>Research Activities:</strong></p>
-                    <ul>
-                        <li>Interviews with visually impaired community members</li>
-                        <li>Consultation with RNIB Scotland accessibility experts</li>
-                        <li>Discussions with Glasgow Botanic Gardens staff</li>
-                        <li>Survey of current visitor experiences and needs</li>
-                    </ul>
-                    <p><strong>Key Insights:</strong> Users emphasized the importance of independence, detailed plant information, and consistent navigation systems.</p>
+                <div class="insight-card">
+                    <h4>🌧️ Weather Resistance</h4>
+                    <p>Outdoor braille maps needed enhanced durability</p>
+                </div>
+                <div class="insight-card">
+                    <h4>📱 User Preference</h4>
+                    <p>89% of users preferred existing device integration</p>
+                </div>
+                <div class="insight-card">
+                    <h4>🔧 Maintenance</h4>
+                    <p>Simpler solutions required less ongoing maintenance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="final-solutions">
+        <div class="solutions-container">
+            <h2 class="section-title">Refined Solutions</h2>
+            <p class="section-subtitle">Practical, user-centered accessibility enhancements</p>
+            
+            <div class="final-grid">
+                <div class="solution-card final">
+                    <div class="card-header">
+                        <div class="solution-icon">🤲</div>
+                        <h3>Tactile Brailled Signage</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Weather-resistant braille descriptions at plant locations throughout the gardens</p>
+                        <div class="features-list">
+                            <span class="feature">• Professional-grade materials</span>
+                            <span class="feature">• Point-of-interest focus</span>
+                            <span class="feature">• Immediate tactile access</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card final">
+                    <div class="card-header">
+                        <div class="solution-icon">🤟</div>
+                        <h3>BSL Website Updates</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Enhanced existing website with British Sign Language video content</p>
+                        <div class="features-list">
+                            <span class="feature">• BSL video integration</span>
+                            <span class="feature">• Existing platform enhancement</span>
+                            <span class="feature">• Hearing impaired accessibility</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="solution-card final">
+                    <div class="card-header">
+                        <div class="solution-icon">📖</div>
+                        <h3>Tactile Guidebook</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Comprehensive guidebook with raised plant illustrations and braille information</p>
+                        <div class="features-list">
+                            <span class="feature">• Raised plant illustrations</span>
+                            <span class="feature">• Braille plant information</span>
+                            <span class="feature">• Portable reference guide</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,10 +318,6 @@
                     <div class="principle">
                         <h4>♿ Inclusive</h4>
                         <p>Solutions benefit all visitors, not just those with visual impairments</p>
-                    </div>
-                    <div class="principle">
-                        <h4>🌱 Sustainable</h4>
-                        <p>Environmentally conscious materials and long-term viability</p>
                     </div>
                 </div>
             </div>

@@ -132,8 +132,8 @@ function initHoverEffects() {
 function initParallaxEffects() {
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
-        // Only apply parallax to team photos, not hero content
-        const parallaxElements = document.querySelectorAll('.team-photo');
+        // Apply parallax to specific elements only (excluding team-photo)
+        const parallaxElements = document.querySelectorAll('.parallax-element');
         
         parallaxElements.forEach(element => {
             const speed = 0.3; // Reduced speed for smoother effect
