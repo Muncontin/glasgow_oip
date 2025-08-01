@@ -852,79 +852,287 @@ footer {
 }
 
 /* Design Methodology Styles */
+#design-methodology {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#design-methodology::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(74, 124, 89, 0.03) 0%, transparent 70%);
+    animation: float-background 20s ease-in-out infinite reverse;
+}
+
+#design-methodology h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2c3e50, #4a7c59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+}
+
 .methodology-content {
-    margin: 2rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.methodology-overview {
+    text-align: center;
+    margin-bottom: 4rem;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(74, 124, 89, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.methodology-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6b9b7a, #4a7c59);
+    background-size: 200% 100%;
+    animation: gradient-flow 3s ease-in-out infinite;
+}
+
+@keyframes gradient-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.methodology-overview h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.methodology-overview p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.design-principles {
+    margin-top: 3rem;
+}
+
+.design-principles h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.design-principles h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6b9b7a);
+    border-radius: 2px;
 }
 
 .principles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
 }
 
 .principle {
     background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.principle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 124, 89, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.principle:hover::before {
+    left: 100%;
+}
+
+.principle:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(74, 124, 89, 0.2);
 }
 
 .principle h4 {
     color: #4a7c59;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.principle p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 /* Timeline Styles */
+#development-process {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+    padding: 5rem 0;
+    position: relative;
+}
+
+#development-process h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #2c3e50, #4a7c59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .development-timeline {
     position: relative;
-    margin: 2rem 0;
-    padding-left: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .development-timeline::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 50%;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background: #4a7c59;
+    width: 4px;
+    background: linear-gradient(180deg, #4a7c59, #6b9b7a, #4a7c59);
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2rem;
-    padding-left: 3rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 0;
+    margin-right: 60%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 60%;
+    margin-right: 0;
+    text-align: left;
 }
 
 .timeline-marker {
     position: absolute;
-    left: -2rem;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    background: #4a7c59;
+    left: 50%;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4a7c59, #6b9b7a);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 1.2rem;
+    transform: translateX(-50%);
+    box-shadow: 0 8px 20px rgba(74, 124, 89, 0.3);
+    border: 4px solid white;
+    z-index: 2;
 }
 
 .timeline-content {
     background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6b9b7a);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(74, 124, 89, 0.2);
 }
 
 .timeline-content h3 {
-    color: #4a7c59;
-    margin-bottom: 1rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* Challenges Grid */
@@ -1815,7 +2023,7 @@ footer {
 }
 
 .solution-card.initial {
-    border-left: 5px solid #e74c3c;
+    border-left: 5px solid #ae4f27;
 }
 
 .solution-card.final {
@@ -1836,13 +2044,20 @@ footer {
 
 .solution-icon {
     font-size: 2.5rem;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(74, 124, 89, 0.1);
     border-radius: 12px;
+}
+
+.solution-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .card-header h3 {
@@ -2657,6 +2872,119 @@ footer {
 
 .recommendation-section li:last-child {
     border-bottom: none;
+}
+
+/* Storyboarding Process Styles */
+#storyboarding-process {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+    padding: 4rem 0;
+    position: relative;
+}
+
+.storyboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.storyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.storyboard-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.storyboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-color: rgba(74, 124, 89, 0.2);
+}
+
+.storyboard-header {
+    margin-bottom: 2rem;
+}
+
+.storyboard-header h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.storyboard-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.storyboard-image {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.storyboard-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.storyboard-image img:hover {
+    transform: scale(1.02);
+}
+
+.storyboard-insights {
+    background: rgba(74, 124, 89, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #4a7c59;
+}
+
+.storyboard-insights h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.storyboard-insights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.storyboard-insights li {
+    color: #555;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.storyboard-insights li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+    font-weight: bold;
+}
+
+.storyboard-insights li:last-child {
+    margin-bottom: 0;
 }
 
 /* Additional Problem Statement Styles */
