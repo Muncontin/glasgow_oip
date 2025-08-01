@@ -662,6 +662,75 @@ footer {
     margin-top: 2rem;
 }
 
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* SIT logo - show as original colors */
+.footer-logo[src*="sitlogo"] {
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* UofG logo - make white */
+.footer-logo[src*="uofg-logo"] {
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-logo[src*="sitlogo"]:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.footer-logo[src*="uofg-logo"]:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Footer Responsive Design */
+@media (max-width: 768px) {
+    .footer-logos {
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        height: 50px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
@@ -1490,27 +1559,53 @@ footer {
     border-radius: 2px;
 }
 
-.partners-unified-card {
+/* Professional Partners Section */
+#acknowledgments {
+    background: linear-gradient(135deg, #f8fffe 0%, #f0f8f0 100%);
+    padding: 4rem 2rem;
+}
+
+.acknowledgments-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.partners-section {
+    margin-bottom: 4rem;
+}
+
+.partners-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.partner-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(74, 124, 89, 0.1);
+    border: 1px solid rgba(74, 124, 89, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 255, 254, 0.95) 100%);
-    border-radius: 24px;
-    box-shadow: 
-        0 10px 40px rgba(74, 124, 89, 0.15),
-        0 4px 20px rgba(74, 124, 89, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(74, 124, 89, 0.1);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
+    text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.partners-unified-card::before {
+.partner-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1518,90 +1613,255 @@ footer {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(74, 124, 89, 0.05), transparent);
-    transition: left 0.8s ease;
+    transition: left 0.6s ease;
 }
 
-.partners-unified-card:hover::before {
+.partner-card:hover::before {
     left: 100%;
 }
 
-.partners-unified-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 
-        0 20px 60px rgba(74, 124, 89, 0.25),
-        0 8px 30px rgba(74, 124, 89, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(74, 124, 89, 0.2);
     border-color: rgba(74, 124, 89, 0.2);
 }
 
-.partner-logo {
-    width: 200px;
-    height: 200px;
+.partner-logo-container {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f8f9fa;
+}
+
+.partner-logo-professional {
+    max-width: 100px;
+    max-height: 100px;
     object-fit: contain;
-    flex-shrink: 0;
-    padding: 24px;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.partner-info h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.partner-role {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a7c59;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.partner-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Community Acknowledgment Section */
+.community-acknowledgment {
+    margin-top: 4rem;
+}
+
+.acknowledgment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.acknowledgment-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 6px 25px rgba(74, 124, 89, 0.08);
+    border-left: 4px solid #4a7c59;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.acknowledgment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(74, 124, 89, 0.15);
+}
+
+.acknowledgment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.acknowledgment-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.acknowledgment-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Team Methodology Section */
+#team-approach {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+    padding: 4rem 2rem;
+}
+
+.approach-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.methodology-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.methodology-intro p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.methodology-card {
+    background: white;
     border-radius: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 
-        0 8px 25px rgba(44, 62, 80, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2.5rem;
+    box-shadow: 0 8px 30px rgba(74, 124, 89, 0.1);
+    border: 1px solid rgba(74, 124, 89, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 }
 
-.partner-logo::before {
+.methodology-card::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
-    border-radius: 17px;
-    pointer-events: none;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 124, 89, 0.05), transparent);
+    transition: left 0.6s ease;
 }
 
-.partner-logo:hover {
-    transform: translateY(-5px) rotate(2deg) scale(1.05);
-    box-shadow: 
-        0 15px 40px rgba(44, 62, 80, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+.methodology-card:hover::before {
+    left: 100%;
 }
 
-.partner-logo:nth-child(2) {
-    animation-delay: 0.1s;
+.methodology-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(74, 124, 89, 0.2);
+    border-color: rgba(74, 124, 89, 0.2);
 }
 
-.partner-logo:nth-child(3) {
-    animation-delay: 0.2s;
+.methodology-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
 }
 
-/* Subtle floating animation */
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
-
-.partners-unified-card .partner-logo {
-    animation: float 6s ease-in-out infinite;
-}
-
-.partners-unified-card .partner-logo:nth-child(2) {
-    animation-delay: -2s;
-}
-
-.partners-unified-card .partner-logo:nth-child(3) {
-    animation-delay: -4s;
-}
-
-.partner-info {
-    flex: 1;
-    font-size: 1.1rem;
-    font-weight: 600;
+.methodology-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.methodology-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.methodology-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.methodology-details li {
+    font-size: 0.95rem;
+    color: #4a7c59;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(74, 124, 89, 0.1);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.methodology-details li:last-child {
+    border-bottom: none;
+}
+
+.methodology-details li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+    font-weight: bold;
+}
+
+/* Responsive Design for Partners Section */
+@media (max-width: 768px) {
+    .partners-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .acknowledgment-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .partner-card {
+        padding: 1.5rem;
+    }
+    
+    .partner-logo-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .partner-logo-professional {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .methodology-card {
+        padding: 2rem;
+    }
+    
+    .methodology-icon {
+        font-size: 2.5rem;
+    }
 }
 
 
