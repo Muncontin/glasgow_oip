@@ -2025,11 +2025,11 @@ footer {
     border: 2px solid transparent;
 }
 
-.goal-item:hover {
+/* .goal-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(74, 124, 89, 0.2);
     border-color: rgba(74, 124, 89, 0.2);
-}
+} */
 
 .goal-icon {
     font-size: 1.5rem;
@@ -2093,7 +2093,7 @@ footer {
     transition: left 0.6s ease;
 }
 
-.pillar-card:hover::before {
+/* .pillar-card:hover::before {
     left: 100%;
 }
 
@@ -2101,7 +2101,7 @@ footer {
     transform: translateY(-10px) scale(1.05);
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .pillar-icon {
     font-size: 4rem;
