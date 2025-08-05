@@ -1,5 +1,5 @@
 // Load navbar and footer, set active page
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Inline navbar content (CORS-safe approach)
     const navbarHTML = `
         <header>
@@ -26,28 +26,34 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </header>
     `;
-    
+
     // Inline footer content (CORS-safe approach)
     const footerHTML = `
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logos">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logos">
+                <a href="https://www.singaporetech.edu.sg/" target="_blank" rel="noopener">
                     <img src="images/sit-logo.png" alt="SIT Logo" class="footer-logo">
+                </a>
+                <a href="https://www.gla.ac.uk/" target="_blank" rel="noopener">
                     <img src="images/uofg-logo.svg" alt="University of Glasgow Logo" class="footer-logo">
+                </a>
+                <a href="https://glasgowbotanicgardens.com/" target="_blank" rel="noopener">
                     <img src="images/friendsofthebotanicslogo.png" alt="Friends of the Botanics Logo" class="footer-logo">
-                </div>
-                <p>&copy; 2025 Glasgow OIP Team 3, Year 2 CS</p>
+                </a>
             </div>
-        </footer>
-    `;
-    
+            <p>&copy; 2025 Glasgow OIP Team 3, Year 2 CS</p>
+        </div>
+    </footer>
+`;
+
     // Insert content directly (no fetch required)
     document.getElementById('navbar-placeholder').innerHTML = navbarHTML;
     document.getElementById('footer-placeholder').innerHTML = footerHTML;
-    
+
     // Set active page
     setActivePage();
-    
+
     // Initialize mobile navigation
     initMobileNav();
 });
@@ -55,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function setActivePage() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const pageKey = currentPage.replace('.html', '');
-    
+
     const navLinks = document.querySelectorAll('.header-nav a');
     navLinks.forEach(link => {
         link.classList.remove('active');
@@ -68,17 +74,17 @@ function setActivePage() {
 function initMobileNav() {
     const navToggle = document.getElementById('navToggle');
     const headerNav = document.getElementById('headerNav');
-    
+
     if (navToggle && headerNav) {
-        navToggle.addEventListener('click', function() {
+        navToggle.addEventListener('click', function () {
             headerNav.classList.toggle('nav-open');
             navToggle.classList.toggle('active');
         });
-        
+
         // Close mobile nav when clicking on a link
         const navLinks = headerNav.querySelectorAll('a');
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 headerNav.classList.remove('nav-open');
                 navToggle.classList.remove('active');
             });

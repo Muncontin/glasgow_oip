@@ -1831,6 +1831,7 @@ footer {
     width: 120px;
     height: 120px;
     background: white;
+    background-color: #a9b5ac; /* darker green-grey */
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -1841,8 +1842,8 @@ footer {
 }
 
 .partner-logo-professional {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
 }
 
