@@ -1399,6 +1399,11 @@ footer {
     font-weight: 700;
 }
 
+.timeline-content h4 {
+    color: #3f4852;
+    margin-top: 1.5rem;
+}
+
 .timeline-content p {
     color: #666;
     line-height: 1.7;
