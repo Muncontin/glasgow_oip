@@ -798,6 +798,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Higher z-index for image modal to appear above other modals */
+#imageModal {
+    z-index: 1100;
+}
+
 .modal-content {
     margin: auto;
     display: block;
@@ -816,6 +821,202 @@ footer {
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
+}
+
+/* Enhanced Modal Styles - Universal for Braille, Signage, and Digital modals */
+#brailleModal .modal-content-container,
+#signageModal .modal-content-container,
+#digitalModal .modal-content-container {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#brailleModal .close,
+#signageModal .close,
+#digitalModal .close {
+    color: #aaa;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1001;
+}
+
+#brailleModal .close:hover,
+#brailleModal .close:focus,
+#signageModal .close:hover,
+#signageModal .close:focus,
+#digitalModal .close:hover,
+#digitalModal .close:focus {
+    color: #4a7c59;
+    text-decoration: none;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #4a7c59, #6b9b7a);
+    color: white;
+    padding: 2rem 2rem 1.5rem;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.modal-body {
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.guidebook-description {
+    margin-bottom: 2rem;
+}
+
+.guidebook-description p {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.guidebook-description h3 {
+    color: #4a7c59;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.guidebook-description ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.guidebook-description li {
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.guidebook-description li strong {
+    color: #4a7c59;
+    font-weight: 600;
+}
+
+.guidebook-samples h3 {
+    color: #4a7c59;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.sample-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.sample-image {
+    text-align: center;
+}
+
+.sample-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(74, 124, 89, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Equal height images for digital platform modal */
+#digitalModal .sample-image {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#digitalModal .sample-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+/* Centered and larger image for enhanced signage modal */
+#signageModal .sample-images {
+    display: flex;
+    justify-content: center;
+}
+
+#signageModal .sample-image {
+    max-width: 600px;
+    width: 100%;
+}
+
+#signageModal .sample-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.sample-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(74, 124, 89, 0.25);
+}
+
+.image-caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Responsive design for enhanced modals */
+@media (max-width: 768px) {
+    #brailleModal .modal-content-container,
+    #signageModal .modal-content-container,
+    #digitalModal .modal-content-container {
+        width: 95%;
+        margin: 5% auto;
+        max-height: 85vh;
+    }
+    
+    .modal-header {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .sample-images {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    #brailleModal .close,
+    #signageModal .close,
+    #digitalModal .close {
+        top: 15px;
+        right: 20px;
+        font-size: 35px;
+    }
 }
 
 .close:hover,
