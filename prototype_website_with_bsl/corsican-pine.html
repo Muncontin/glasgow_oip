@@ -16,7 +16,7 @@
       #bsl-button:hover {
         cursor: pointer;
       }
-      
+
       /* Mobile-responsive styles for BSL prototype */
       @media (max-width: 768px) {
         /* Header and title adjustments */
@@ -26,7 +26,7 @@
           text-align: center !important;
           gap: 15px !important;
         }
-        
+
         /* BSL button mobile optimization */
         #bsl-button {
           width: 100% !important;
@@ -34,7 +34,7 @@
           padding: 18px 20px !important;
           font-size: 18px !important;
         }
-        
+
         /* Video container mobile optimization */
         #floating-video {
           width: 95vw !important;
@@ -44,7 +44,7 @@
           left: 50% !important;
           margin: 0 !important;
         }
-        
+
         /* Close button mobile optimization */
         #close-video {
           width: 44px !important;
@@ -53,13 +53,13 @@
           top: 15px !important;
           right: 15px !important;
         }
-        
+
         /* Content padding adjustments */
         .wp-block-group[style*="padding"] {
           padding-left: 15px !important;
           padding-right: 15px !important;
         }
-        
+
         /* Post title mobile styling */
         .wp-block-post-title {
           font-size: 1.8rem !important;
@@ -67,7 +67,7 @@
           margin-bottom: 10px !important;
         }
       }
-      
+
       @media (max-width: 480px) {
         /* Extra small screens */
         #floating-video {
@@ -75,23 +75,23 @@
           height: 60vw !important;
           max-height: 75vh !important;
         }
-        
+
         #bsl-button {
           font-size: 16px !important;
           padding: 16px 18px !important;
         }
-        
+
         .wp-block-post-title {
           font-size: 1.5rem !important;
         }
       }
-      
+
       /* Touch-friendly improvements */
       @media (hover: none) and (pointer: coarse) {
         #bsl-button {
           min-height: 48px !important;
         }
-        
+
         #close-video {
           min-width: 48px !important;
           min-height: 48px !important;
@@ -2364,7 +2364,7 @@
       <iframe
         width="100%"
         height="100%"
-        src="https://www.youtube.com/embed/CNjlpCLp5vQ?si=9IcmOwq0qrTyX4FQ"
+        src="https://www.youtube.com/embed/CNjlpCLp5vQ?autoplay=1&mute=1"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -2900,7 +2900,16 @@
         >
           <div
             class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained"
-            style="display: flex; align-items: center; margin: 0 auto; max-width: 1200px; padding: 0 20px; flex-wrap: wrap; gap: 20px; justify-content: space-between;"
+            style="
+              display: flex;
+              align-items: center;
+              margin: 0 auto;
+              max-width: 1200px;
+              padding: 0 20px;
+              flex-wrap: wrap;
+              gap: 20px;
+              justify-content: space-between;
+            "
           >
             <h2 class="wp-block-post-title">01. Corsican Pine</h2>
             <div>
@@ -2929,21 +2938,18 @@
                 onmouseover="this.style.backgroundColor='#d84315'; this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 6px 16px rgba(198, 40, 40, 0.5)';"
                 onmouseout="this.style.backgroundColor='#c62828'; this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 12px rgba(198, 40, 40, 0.4)';"
               >
-                <img 
-                  src="../images/signlanguage.svg" 
+                <img
+                  src="../images/signlanguage.svg"
                   alt="BSL Icon"
-                  style="height: 2em; width: auto; flex-shrink: 0;"
+                  style="height: 2em; width: auto; flex-shrink: 0"
                 />
                 Watch in BSL
-                <img 
-                  src="../images/playcircle.svg" 
+                <img
+                  src="../images/playcircle.svg"
                   alt="Play Icon"
-                  style="height: 1.6em; width: auto; flex-shrink: 0;"
+                  style="height: 1.6em; width: auto; flex-shrink: 0"
                 />
               </button>
-
-
-
             </div>
           </div>
 
