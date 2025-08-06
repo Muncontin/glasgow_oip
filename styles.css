@@ -3847,3 +3847,45 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Concept Refinement Section */
+#concept-refinement {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+}
+#concept-refinement .refinement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#concept-refinement .section-title {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+#concept-refinement .section-subtitle {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards grid */
+.refinement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.refinement-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.refinement-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.refinement-card p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+.refinement-card strong {
+  color: #333;
+}
