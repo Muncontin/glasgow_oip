@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monstera Guidebook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #111;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .illustration, .info {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .monstera-svg {
+      width: 100%;
+      height: auto;
+    }
+
+    h1, h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.3em;
+    }
+
+    .braille-text {
+      font-family: 'SimBraille', monospace;
+      font-size: 1.3em;
+      line-height: 1.6;
+      letter-spacing: 2px;
+      margin-top: 1em;
+    }
+
+    .qr-section {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.5em;
+    }
+
+    .qr-section img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .high-contrast {
+      color: #000;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- Left page: Monstera Illustration -->
+    <section class="illustration" aria-label="Tactile Monstera Illustration">
+      <!-- Placeholder for SVG-based Monstera illustration -->
+      <img src="../images/monstera.png" alt="QR code linking to Monstera webpage">
+    </section>
+
+    <!-- Right page: Monstera Info and Braille -->
+    <section class="info" aria-label="Monstera Information with Braille">
+      <h1>MONSTERA</h1>
+      <div class="braille-text" aria-hidden="true">⠍⠕⠝⠎⠞⠑⠗⠁</div>
+
+      <p>
+        The Monstera is a tropical climbing plant with large, heart-shaped leaves that develop natural splits and holes as they mature. Native to Central America, 
+        it uses aerial roots to cling to trees and grows best in warm, humid environments.
+      </p>
+
+      <div class="braille-text" aria-hidden="true">
+        ⠞⠓⠑ ⠍⠕⠝⠎⠞⠑⠗⠁ ⠊⠎ ⠁ ⠞⠗⠕⠏⠊⠉⠁⠇ ⠉⠇⠊⠍⠃⠊⠝⠛ ⠏⠇⠁⠝⠞ ⠺⠊⠞⠓ ⠇⠁⠗⠛⠑⠂ ⠓⠑⠁⠗⠞-⠎⠓⠁⠏⠑⠙ ⠇⠑⠁⠧⠑⠎ ⠞⠓⠁⠞ ⠙⠑⠧⠑⠇⠕⠏ ⠝⠁⠞⠥⠗⠁⠇ ⠎⠏⠇⠊⠞⠎ 
+        ⠁⠝⠙ ⠓⠕⠇⠑⠎ ⠁⠎ ⠞⠓⠑⠽ ⠍⠁⠞⠥⠗⠑⠲ ⠝⠁⠞⠊⠧⠑ ⠞⠕ ⠉⠑⠝⠞⠗⠁⠇ ⠁⠍⠑⠗⠊⠉⠁⠂ ⠊⠞ ⠥⠎⠑⠎ ⠁⠑⠗⠊⠁⠇ ⠗⠕⠕⠞⠎ ⠞⠕ ⠉⠇⠊⠝⠛ ⠞⠕ ⠞⠗⠑⠑⠎ ⠁⠝⠙ ⠛⠗⠕⠺⠎ ⠃⠑⠎⠞ ⠊⠝ ⠺⠁⠗⠍⠂ ⠓⠥⠍⠊⠙ ⠑⠝⠧⠊⠗⠕⠝⠍⠑⠝⠞⠎⠲
+      </div>
+
+      <div class="qr-section">
+        <p>Scan the QR code for additional information</p>
+        <div class="braille-text" aria-hidden="true">⠎⠉⠁⠝ ⠟⠗ ⠋⠕⠗ ⠊⠝⠋⠕</div>
+        <img src="../images/qrcode_prototype_site.png" alt="QR code linking to Monstera webpage">
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
