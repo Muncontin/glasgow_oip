@@ -837,6 +837,16 @@ footer {
     overflow-y: auto;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
     position: relative;
+
+    /* Hide scrollbar in Firefox and IE/Edge */
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE and Edge */
+}
+
+#brailleModal .modal-content-container::-webkit-scrollbar,
+#signageModal .modal-content-container::-webkit-scrollbar,
+#digitalModal .modal-content-container::-webkit-scrollbar {
+  display: none;
 }
 
 #brailleModal .close,
