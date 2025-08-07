@@ -13,171 +13,47 @@
 
     <section id="solutions">
       <h2>Our Accessibility Solutions</h2>
-      <div class="solutions-grid">
-        <div class="solution-card" onclick="openBrailleModal()">
+      
+      <!-- Braille Guidebook Section -->
+      <div class="solution-section">
+        <div class="solution-header">
           <img
             src="images/brailleguidebook.png"
             alt="Braille Botanical Art Guide showing Monstera plant with braille text"
+            class="solution-main-image"
           />
-          <div class="solution-content">
-            <h3>Braille Guidebook</h3>
+          <div class="solution-intro">
+            <h3>Braille Botanical Guidebook</h3>
             <p>
-              Comprehensive botanical art guide featuring 
-              braille descriptions and tactile illustrations
-              of plants throughout the Botanic Gardens. 
-              Provides tactile learning experience for visually impaired
-              visitors.
+              Our comprehensive braille guidebook offers an innovative solution to making botanical education accessible for visually impaired visitors. Drawing inspiration from the tactile guidebook at
+              Singapore's Gardens by the Bay, this resource integrates traditional braille with thoughtfully crafted layouts to support an engaging and inclusive learning experience.
             </p>
           </div>
         </div>
-        <div class="solution-card" onclick="openSignageModal()">
-          <img
-            src="images/braillesign.png"
-            alt="Enhanced signage with braille text for Corsican Pine identification"
-          />
-          <div class="solution-content">
-            <h3>Enhanced Signage</h3>
-            <p>
-              Upgraded existing plant identification signs with braille text.
-              Example shows Corsican Pine (Pinus nigra ssp. laricio) with QR
-              code integration for additional digital accessibility.
-            </p>
-          </div>
-        </div>
-        <div class="solution-card" onclick="openDigitalModal()">
-          <img
-            src="images/new website.png"
-            alt="Accessible website design for Friends of Glasgow Botanic Gardens"
-          />
-          <div class="solution-content">
-            <h3>Digital Platform</h3>
-            <p>
-              Integrated embedded BSL (British Sign Language) videos into the website, allowing users to access signed descriptions of plant information for improved accessibility.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div id="footer-placeholder"></div>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img class="modal-content" id="modalImage" />
-    </div>
-
-    <!-- Digital Platform Modal -->
-    <div id="digitalModal" class="modal">
-      <div class="modal-content-container">
-        <span class="close" onclick="closeDigitalModal()">&times;</span>
-        <div class="modal-header">
-          <h2>Digital Platform Enhancement</h2>
-        </div>
-        <div class="modal-body">
-          <div class="guidebook-description">
-            <p>Our digital platform enhancement focuses on making the Friends of Glasgow Botanic Gardens website more accessible through the integration of British Sign Language (BSL) videos. This solution is a complementary resource to our Enhanced Signage solution.</p>
-            
-            <h3>Key Features:</h3>
-            <ul>
-              <li><strong>BSL Video Integration:</strong> Embedded British Sign Language videos providing signed descriptions of plant information</li>
-              <li><strong>QR Code Connectivity:</strong> Seamless integration with physical signage through QR codes</li>
-              <li><strong>Multi-Modal Access:</strong> Supports various accessibility needs including visual, auditory, and motor impairments</li>
-            </ul>
-            
-            <p>The digital platform serves as a comprehensive resource that complements our physical accessibility solutions, providing visitors with multiple ways to access botanical information.</p>
-          </div>
+        
+        <div class="solution-details">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><strong>Tactile Plant Descriptions:</strong> Detailed braille text describing plant characteristics, origins, and interesting facts</li>
+            <li><strong>Structured Layout:</strong> Organized format that makes navigation easy through touch</li>
+            <li><strong>Educational Content:</strong> Covers diverse plant species throughout the Botanic Gardens</li>
+            <li><strong>Complementary Resource:</strong> Works alongside the enhanced signage and existing website (for already existing plants)</li>
+            <li><strong>Tactile QR Code Boundary:</strong> A raised tactile border surrounds each QR code for easy fingertip detection.</li>
+          </ul>
           
-          <div class="guidebook-samples">
-            <div class="sample-images">
-              <div class="sample-image">
-                <img src="images/new website.png" alt="Enhanced website interface showing improved accessibility features and design" onclick="openModal(this)" style="cursor: pointer;" />
-                <p class="image-caption">Enhanced website interface featuring improved accessibility design and BSL video integration</p>
-              </div>
-              <div class="sample-image">
-                <img src="images/stepbystepguide.png" alt="Step-by-step guide showing how to navigate the accessible digital platform" onclick="openModal(this)" style="cursor: pointer;" />
-                <p class="image-caption">Step-by-step guide demonstrating the enhanced digital platform features and navigation</p>
-              </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-              <a href="prototype_website_with_bsl/corsican-pine.html" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #4a7c59, #3a6249); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);">
-                🌐 Visit Enhanced Website
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Enhanced Signage Modal -->
-    <div id="signageModal" class="modal">
-      <div class="modal-content-container">
-        <span class="close" onclick="closeSignageModal()">&times;</span>
-        <div class="modal-header">
-          <h2>Enhanced Signage System</h2>
-        </div>
-        <div class="modal-body">
-          <div class="guidebook-description">
-            <p>Our enhanced signage system transforms traditional plant identification signs into comprehensive accessibility tools. By integrating braille text with existing visual information, we create an inclusive experience that serves all visitors while maintaining the aesthetic integrity of the garden environment.</p>
-            
-            <h3>Key Features:</h3>
-            <ul>
-              <li><strong>Dual-Format Information:</strong> Combines visual text with tactile braille for universal accessibility</li>
-              <li><strong>QR Code Integration:</strong> Links to the relevant plant/tree in the Friends Of The Gardens Website</li>
-              <li><strong>Consistent Design Language:</strong> Maintains visual harmony with existing garden aesthetics</li>
-            </ul>
-            
-            <p>The enhanced signage serves as a means for the visually impaired to better navigate and understand the garden.</p>
-          </div>
+          <p>The guidebook serves as both an educational tool and a bridge to independence, allowing visually impaired visitors to explore the gardens at their own pace while gaining deep knowledge about the botanical collections.
+            The QR code leads to the Friends of the Botanics' website for further information on that specific plant.
+          </p>
           
-          <div class="guidebook-samples">
-            <h3>Implementation Example:</h3>
-            <div class="sample-images">
-              <div class="sample-image">
-                <img src="images/braillesign.png" alt="Enhanced signage showing Corsican Pine identification with braille text and QR code" onclick="openModal(this)" style="cursor: pointer;" />
-                <p class="image-caption">Corsican Pine (Pinus nigra ssp. laricio) signage featuring integrated braille text and QR code for digital accessibility</p>
-              </div>
+          <h4>Sample Pages:</h4>
+          <div class="sample-images">
+            <div class="sample-image">
+              <img src="images/guidebook_sample1.png" alt="Sample page 1 of braille guidebook showing plant descriptions in braille format" onclick="openModal(this)" style="cursor: pointer;" />
+              <p class="image-caption">Left side of guidebook (Contains a raised tactile illustation of a plant)</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Braille Guidebook Modal -->
-    <div id="brailleModal" class="modal">
-      <div class="modal-content-container">
-        <span class="close" onclick="closeBrailleModal()">&times;</span>
-        <div class="modal-header">
-          <h2>Braille Botanical Guidebook</h2>
-        </div>
-        <div class="modal-body">
-          <div class="guidebook-description">
-            <p>Our comprehensive braille guidebook offers an innovative solution to making botanical education accessible for visually impaired visitors. Drawing inspiration from the tactile guidebook at
-               Singapore’s Gardens by the Bay, this resource integrates traditional braille with thoughtfully crafted layouts to support an engaging and inclusive learning experience.</p>
-            
-            <h3>Key Features:</h3>
-            <ul>
-              <li><strong>Tactile Plant Descriptions:</strong> Detailed braille text describing plant characteristics, origins, and interesting facts</li>
-              <li><strong>Structured Layout:</strong> Organized format that makes navigation easy through touch</li>
-              <li><strong>Educational Content:</strong> Covers diverse plant species throughout the Botanic Gardens</li>
-              <li><strong>Complementary Resource:</strong> Works alongside the enhanced signage and existing website (for already existing plants)</li>
-            </ul>
-            
-            <p>The guidebook serves as both an educational tool and a bridge to independence, allowing visually impaired visitors to explore the gardens at their own pace while gaining deep knowledge about the botanical collections.</p>
-          </div>
-          
-          <div class="guidebook-samples">
-            <h3>Sample Pages:</h3>
-            <div class="sample-images">
-              <div class="sample-image">
-                <img src="images/guidebook_sample1.png" alt="Sample page 1 of braille guidebook showing plant descriptions in braille format" onclick="openModal(this)" style="cursor: pointer;" />
-                <p class="image-caption">Sample page showing tactile raised illustration of a plant.</p>
-              </div>
-              <div class="sample-image">
-                <img src="images/guidebook_sample2.png" alt="Sample page 2 of braille guidebook showing structured layout and organization" onclick="openModal(this)" style="cursor: pointer;" />
-                <p class="image-caption">Example of the structured layout and description of each plant throughout the guidebook</p>
-              </div>
+            <div class="sample-image">
+              <img src="images/guidebook_sample2.png" alt="Sample page 2 of braille guidebook showing structured layout and organization" onclick="openModal(this)" style="cursor: pointer;" />
+              <p class="image-caption">Right side of guidebook (Contains plant information and QR code)</p>
             </div>
           </div>
 
@@ -188,6 +64,110 @@
           </div>
         </div>
       </div>
+
+      <!-- Enhanced Signage Section -->
+      <div class="solution-section">
+        <div class="solution-header">
+          <img
+            src="images/Enhanced Signage/Final Design.png"
+            alt="Enhanced signage with braille text for Corsican Pine identification"
+            class="solution-main-image"
+          />
+          <div class="solution-intro">
+            <h3>Enhanced Signage System</h3>
+            <p>
+              Our enhanced signage system transforms traditional plant identification signs into comprehensive accessibility tools. By integrating braille text with existing visual information, we create an inclusive experience that serves all visitors while maintaining the aesthetic integrity of the garden environment.
+            </p>
+          </div>
+        </div>
+        
+        <div class="solution-details">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><strong>Dual-Format Information:</strong> Combines visual text with tactile braille for universal accessibility</li>
+            <li><strong>QR Code Integration:</strong> Links to the relevant plant/tree in the Friends Of The Gardens Website</li>
+            <li><strong>Consistent Design Language:</strong> Maintains visual harmony with existing garden aesthetics</li>
+          </ul>
+          
+          <p>The enhanced signage serves as a means for the visually impaired to better navigate and understand the garden.</p>
+          
+          <h4>Implementation Example:</h4>
+          <div class="sample-images">
+
+            <div class="sample-image" style="text-align: center;">
+              <div class="image-container">
+                <img src="images/Enhanced Signage/Final Design.png" alt="Enhanced signage showing Corsican Pine identification with braille text and QR code" onclick="openModal(this)" style="cursor: pointer;" />
+              </div>
+              <p class="image-caption">Final signage design created with Figma</p>
+            </div>
+
+            <div class="sample-image" style="text-align: center;">
+              <div class="image-container">
+                <img src="images/braillesign.png" alt="Enhanced signage showing Corsican Pine identification with braille text and QR code" onclick="openModal(this)" style="cursor: pointer;" />
+              </div>
+              <p class="image-caption">AI generated image of the enhanced signage</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Digital Platform Section -->
+      <div class="solution-section">
+        <div class="solution-header">
+          <img
+            src="images/prototype_website_with_bsl_button.png"
+            alt="Accessible website design for Friends of Glasgow Botanic Gardens"
+            class="solution-main-image"
+          />
+          <div class="solution-intro">
+            <h3>Digital Platform Enhancement</h3>
+            <p>
+              Our digital platform enhancement focuses on making the Friends of Glasgow Botanic Gardens website more accessible through the integration of British Sign Language (BSL) videos. This solution is a complementary resource to our Enhanced Signage solution.
+            </p>
+          </div>
+        </div>
+        
+        <div class="solution-details">
+          <h4>Key Features:</h4>
+          <ul>
+            <li><strong>BSL Video Integration:</strong> Embedded British Sign Language videos providing signed descriptions of plant information</li>
+            <li><strong>QR Code Connectivity:</strong> Seamless integration with physical signage through QR codes</li>
+            <li><strong>Multi-Modal Access:</strong> Supports various accessibility needs including visual, auditory, and motor impairments</li>
+          </ul>
+          
+          <p>The digital platform serves as a comprehensive resource that complements our physical accessibility solutions, providing visitors with multiple ways to access botanical information.</p>
+          
+          <div class="sample-images">
+            <div class="sample-image">
+              <div class="image-container">
+                <img src="images/prototype_website_with_bsl_button.png" alt="Enhanced website interface showing improved accessibility features and design" onclick="openModal(this)" style="cursor: pointer;" />
+              </div>
+              <p class="image-caption">Enhanced website interface featuring improved accessibility design and BSL video integration</p>
+            </div>
+            <div class="sample-image">
+              <div class="image-container">
+                <img src="images/stepbystepguide.png" alt="Step-by-step guide showing how to navigate the accessible digital platform" onclick="openModal(this)" style="cursor: pointer;" />
+              </div>
+              <p class="image-caption">Step-by-step guide demonstrating the enhanced digital platform features and navigation</p>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="prototype_website_with_bsl/corsican-pine.html" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #4a7c59, #3a6249); color: white; padding: 12px 24px; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);">
+              🌐 Visit Enhanced Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Image Modal for enlarged images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
     </div>
 
     <script>
@@ -203,51 +183,12 @@
         document.getElementById("imageModal").style.display = "none";
       }
 
-      function openBrailleModal() {
-        const modal = document.getElementById("brailleModal");
-        modal.style.display = "block";
-      }
-
-      function closeBrailleModal() {
-        document.getElementById("brailleModal").style.display = "none";
-      }
-
-      function openSignageModal() {
-        const modal = document.getElementById("signageModal");
-        modal.style.display = "block";
-      }
-
-      function closeSignageModal() {
-        document.getElementById("signageModal").style.display = "none";
-      }
-
-      function openDigitalModal() {
-        const modal = document.getElementById("digitalModal");
-        modal.style.display = "block";
-      }
-
-      function closeDigitalModal() {
-        document.getElementById("digitalModal").style.display = "none";
-      }
-
       // Close modal when clicking outside the content
       window.onclick = function (event) {
         const imageModal = document.getElementById("imageModal");
-        const brailleModal = document.getElementById("brailleModal");
-        const signageModal = document.getElementById("signageModal");
-        const digitalModal = document.getElementById("digitalModal");
         
         if (event.target === imageModal) {
           imageModal.style.display = "none";
-        }
-        if (event.target === brailleModal) {
-          brailleModal.style.display = "none";
-        }
-        if (event.target === signageModal) {
-          signageModal.style.display = "none";
-        }
-        if (event.target === digitalModal) {
-          digitalModal.style.display = "none";
         }
       };
 
@@ -255,9 +196,6 @@
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") {
           closeModal();
-          closeBrailleModal();
-          closeSignageModal();
-          closeDigitalModal();
         }
       });
     </script>
