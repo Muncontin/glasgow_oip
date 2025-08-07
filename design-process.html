@@ -457,7 +457,6 @@
         <div class="prototyping-container">
             <div class="prototyping-header">
                 <h2>Prototyping</h2>
-                <div class="section-divider"></div>
                 <p class="prototyping-description">Creating low-fidelity prototypes for rapid testing and validation. Focused on core functionality and user interaction patterns through <strong>storyboarding and usability testing.</strong></p>
             </div>
             
@@ -486,7 +485,7 @@
                     <div class="prototype-showcase">
                         <div class="prototype-frame">
                             <img src="images/original prototype.jpeg" alt="Original prototype of solutions" onclick="openModal(this)">
-                            <div class="prototype-overlay">
+                            <div class="prototype-overlay" onclick="openModal(document.querySelector('img[src=\'images/original prototype.jpeg\']'))">
                                 <span class="overlay-text">Click to view details</span>
                             </div>
                         </div>
@@ -517,10 +516,10 @@
         <!-- LINK TO USABILITY TESTING VIDEO -->
     </section>
 
-    <section id="Improved prototype">
-        <h2>Iterative Prototype</h2>
+    <section id="iterative-prototyping">
+        <h2>Iterative Prototyping</h2>
         <center>
-        <p>Based on usability testing, user research and stakeholder feedback, we iterated on our prototypes to enhance usability and accessibility.</p>
+        <p>Based on usability testing, user research and stakeholder feedback, we iterated on our prototypes to enhance usability and accessibility. Below are our prototype and final designs for our proposed solutions.</p>
         </center>
         <br>
         <div class="prototype-gallery">
@@ -586,16 +585,18 @@
                 </div>
                 <div class="final-design-guidebook">
                     <div class="prototype-item">
-                        <img src="images/Guidebook/Final design (left page).png" alt="Final Guidebook Design - Left Page" onclick="openModal(this)">
-                        <caption>
-                            <center><strong>Final Design - Left Page</strong></center>
-                        </caption>
-                    </div>
-                    <div class="prototype-item">
-                        <img src="images/Guidebook/Final Design (right page).png" alt="Final Guidebook Design - Right Page" onclick="openModal(this)">
-                        <caption>
-                            <center><strong>Final Design - Right Page</strong></center>
-                        </caption>
+                        <div class="guidebook-page">
+                            <img src="images/Guidebook/Final design (left page).png" alt="Final Guidebook Design - Left Page" onclick="openModal(this)">
+                            <caption>
+                                <center><strong>Final Design - Left Page</strong></center>
+                            </caption>
+                        </div>
+                        <div class="guidebook-page">
+                            <img src="images/Guidebook/Final Design (right page).png" alt="Final Guidebook Design - Right Page" onclick="openModal(this)">
+                            <caption>
+                                <center><strong>Final Design - Right Page</strong></center>
+                            </caption>
+                        </div>
                     </div>
                 </div>
             </div>

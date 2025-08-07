@@ -3764,9 +3764,86 @@ footer {
     background: linear-gradient(135deg, #3a6249, #2a4a39);
 }
 
+/* Iterative Prototyping Section Styles */
+#iterative-prototyping {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5f0 100%);
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(74, 124, 89, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    text-align: center;
+}
+
+#iterative-prototyping::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 20px 20px 0 0;
+}
+
+#iterative-prototyping h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+#iterative-prototyping h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f);
+    border-radius: 2px;
+}
+
+#iterative-prototyping > center > p {
+    font-size: 1.2rem;
+    color: #5a6c57;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.prototype-gallery {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
 /* BSL Button Design Iterations Styles */
 .bsl-iterations-section {
     margin-top: 2rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.bsl-iterations-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 15px 15px 0 0;
 }
 
 .bsl-iterations-section h3 {
@@ -3873,8 +3950,23 @@ footer {
 /* Guidebook Design Iterations Styles */
 .guidebook-iterations-section {
     margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #e0e6e0;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.guidebook-iterations-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 15px 15px 0 0;
 }
 
 .guidebook-iterations-section h3 {
@@ -3920,20 +4012,22 @@ footer {
 }
 
 .final-design-guidebook {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
-    justify-items: center;
 }
 
 .final-design-guidebook .prototype-item {
     background: white;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(74, 124, 89, 0.15);
-    border: 2px solid #4a7c59;
-    max-width: 350px;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(74, 124, 89, 0.2);
+    border: 3px solid #4a7c59;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
     transition: all 0.3s ease;
 }
 
@@ -3942,9 +4036,27 @@ footer {
     box-shadow: 0 10px 30px rgba(74, 124, 89, 0.2);
 }
 
+.guidebook-page {
+    flex: 1;
+    text-align: center;
+}
+
+.guidebook-page img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.guidebook-page img:hover {
+    transform: scale(1.02);
+}
+
 .final-design-guidebook .prototype-item img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: contain;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -3971,13 +4083,19 @@ footer {
         height: 150px;
     }
     
-    .final-design-guidebook {
-        grid-template-columns: 1fr;
+    .final-design-guidebook .prototype-item {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 2rem;
         gap: 1.5rem;
     }
     
+    .guidebook-page img {
+        height: 250px;
+    }
+    
     .final-design-guidebook .prototype-item img {
-        height: 160px;
+        height: 250px;
     }
     
     .guidebook-iterations-section h3 {
@@ -4233,8 +4351,23 @@ footer {
 /* Enhanced Signage Design Iterations Styles */
 .signage-iterations-section {
     margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 2px solid #e0e6e0;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.signage-iterations-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 15px 15px 0 0;
 }
 
 .signage-iterations-section h3 {
@@ -4335,6 +4468,52 @@ footer {
     
     .signage-iterations-section h3 {
         font-size: 1.3rem;
+    }
+}
+
+/* Responsive Design for Iterative Prototyping Section */
+@media (max-width: 768px) {
+    #iterative-prototyping {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+        border-radius: 15px;
+    }
+    
+    #iterative-prototyping h2 {
+        font-size: 2rem;
+    }
+    
+    #iterative-prototyping > center > p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .prototype-gallery {
+        padding: 1rem 0;
+    }
+    
+    .bsl-iterations-section,
+    .guidebook-iterations-section,
+    .signage-iterations-section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #iterative-prototyping {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    #iterative-prototyping h2 {
+        font-size: 1.8rem;
+    }
+    
+    .bsl-iterations-section,
+    .guidebook-iterations-section,
+    .signage-iterations-section {
+        padding: 1rem;
     }
 }
 
