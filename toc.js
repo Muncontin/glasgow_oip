@@ -118,7 +118,9 @@ class TableOfContents {
         });
         
         // Update active link on scroll
-        window.addEventListener('scroll', () => this.throttle(() => this.updateActiveLink(), 100));
+        this.throttledScrollHandler = this.throttle(() => this.updateActiveLink(), 100);
+        window.addEventListener('scroll', this.throttledScrollHandler);
+
         
         // Handle window resize
         window.addEventListener('resize', () => this.handleResize());
