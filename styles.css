@@ -3744,6 +3744,600 @@ footer {
     }
 }
 
+/* Usability Testing Section Styles */
+.usability-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #4a7c59, #3a6249);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(74, 124, 89, 0.2);
+}
+
+.usability-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);
+    background: linear-gradient(135deg, #3a6249, #2a4a39);
+}
+
+/* BSL Button Design Iterations Styles */
+.bsl-iterations-section {
+    margin-top: 2rem;
+}
+
+.bsl-iterations-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.bsl-iterations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bsl-iterations-grid .prototype-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bsl-iterations-grid .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bsl-iterations-grid .prototype-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bsl-iterations-grid .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-design .prototype-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(74, 124, 89, 0.15);
+    border: 2px solid #4a7c59;
+    max-width: 300px;
+    transition: all 0.3s ease;
+}
+
+.final-design .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.2);
+}
+
+.final-design .prototype-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.final-design .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design caption {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #4a7c59;
+}
+
+/* Responsive design for BSL iterations */
+@media (max-width: 768px) {
+    .bsl-iterations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .bsl-iterations-grid .prototype-item img {
+        height: 100px;
+    }
+    
+    .final-design .prototype-item img {
+        height: 120px;
+    }
+    
+    .bsl-iterations-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Guidebook Design Iterations Styles */
+.guidebook-iterations-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0e6e0;
+}
+
+.guidebook-iterations-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.guidebook-iterations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.guidebook-iterations-grid .prototype-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.guidebook-iterations-grid .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.guidebook-iterations-grid .prototype-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guidebook-iterations-grid .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design-guidebook {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.final-design-guidebook .prototype-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(74, 124, 89, 0.15);
+    border: 2px solid #4a7c59;
+    max-width: 350px;
+    transition: all 0.3s ease;
+}
+
+.final-design-guidebook .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.2);
+}
+
+.final-design-guidebook .prototype-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.final-design-guidebook .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design-guidebook caption {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #4a7c59;
+}
+
+/* Responsive design for Guidebook iterations */
+@media (max-width: 768px) {
+    .guidebook-iterations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .guidebook-iterations-grid .prototype-item img {
+        height: 150px;
+    }
+    
+    .final-design-guidebook {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .final-design-guidebook .prototype-item img {
+        height: 160px;
+    }
+    
+    .guidebook-iterations-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Prototyping Section Styles */
+.prototyping-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.prototyping-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.prototyping-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.prototyping-header .section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #4a7c59, #6b9b7a);
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+    position: relative;
+}
+
+.prototyping-header .section-divider::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 8px;
+    background: #4a7c59;
+    border-radius: 50%;
+}
+
+.prototyping-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prototyping-description strong {
+    color: #4a7c59;
+    font-weight: 600;
+}
+
+.prototyping-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.prototyping-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(74, 124, 89, 0.1);
+    border-left: 4px solid #4a7c59;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 124, 89, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.highlight-card:hover::before {
+    left: 100%;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.15);
+    border-left-color: #3a6249;
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(74, 124, 89, 0.2));
+}
+
+.highlight-card h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.highlight-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.prototype-showcase {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.1);
+    transition: all 0.3s ease;
+}
+
+.prototype-showcase:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(74, 124, 89, 0.15);
+}
+
+.prototype-frame {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.prototype-frame img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prototype-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(74, 124, 89, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.prototype-frame:hover .prototype-overlay {
+    opacity: 1;
+}
+
+.prototype-frame:hover img {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.prototype-details h4 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.prototype-details p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.prototype-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: linear-gradient(135deg, #4a7c59, #3a6249);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(74, 124, 89, 0.3);
+}
+
+/* Responsive design for Prototyping section */
+@media (max-width: 768px) {
+    .prototyping-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .prototyping-header h2 {
+        font-size: 2rem;
+    }
+    
+    .prototyping-description {
+        font-size: 1.1rem;
+    }
+    
+    .prototype-frame img {
+        height: 250px;
+    }
+    
+    .highlight-card {
+        padding: 1.25rem;
+    }
+    
+    .prototype-showcase {
+        padding: 1.5rem;
+    }
+}
+
+/* Enhanced Signage Design Iterations Styles */
+.signage-iterations-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0e6e0;
+}
+
+.signage-iterations-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.signage-iterations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.signage-iterations-grid .prototype-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.signage-iterations-grid .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.signage-iterations-grid .prototype-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signage-iterations-grid .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design-signage {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-design-signage .prototype-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(74, 124, 89, 0.15);
+    border: 2px solid #4a7c59;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.final-design-signage .prototype-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.2);
+}
+
+.final-design-signage .prototype-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.final-design-signage .prototype-item img:hover {
+    transform: scale(1.05);
+}
+
+.final-design-signage caption {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #4a7c59;
+}
+
+/* Responsive design for Enhanced Signage iterations */
+@media (max-width: 768px) {
+    .signage-iterations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .signage-iterations-grid .prototype-item img {
+        height: 150px;
+    }
+    
+    .final-design-signage .prototype-item img {
+        height: 180px;
+    }
+    
+    .signage-iterations-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
 /* Responsive Design for New Pages */
 @media (max-width: 768px) {
     .prototype-grid, .process-grid {
