@@ -5340,3 +5340,256 @@ footer {
         line-height: 1.4;
     }
 }
+
+/* Iterative Prototyping Section Styles */
+#iterative-prototyping-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#iterative-prototyping-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.section-intro p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.prototype-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Individual Iteration Section */
+.iteration-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iteration-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.iteration-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.iteration-header h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.iteration-header h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.iteration-description {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.iteration-description p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Iterations Container */
+.iterations-container {
+    margin-bottom: 3rem;
+}
+
+.iterations-subtitle {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.final-design-subtitle {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Iterations Grid */
+.iterations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.prototype-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.prototype-item:hover {
+    transform: scale(1.05);
+}
+
+.prototype-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.prototype-item img:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.prototype-caption {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.prototype-caption.final {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* Final Design Container */
+.final-design-container {
+    border-top: 2px solid #e9ecef;
+    padding-top: 2.5rem;
+}
+
+.final-design-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.final-design-item img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 3px solid var(--accent-color);
+}
+
+.final-design-description {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent-color);
+    margin-top: 1.5rem;
+}
+
+.final-design-description p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Guidebook Specific Styles */
+.guidebook-pages {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.guidebook-page {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.guidebook-page img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 3px solid var(--accent-color);
+}
+
+/* Responsive Design for Iterative Prototyping */
+@media (max-width: 768px) {
+    .iteration-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .iteration-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .iterations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .guidebook-pages {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .final-design-item img {
+        max-width: 300px;
+    }
+    
+    .final-design-description {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #iterative-prototyping-section {
+        padding: 3rem 0;
+    }
+    
+    .iteration-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .iterations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .prototype-gallery {
+        gap: 3rem;
+    }
+}
