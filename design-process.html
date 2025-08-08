@@ -634,15 +634,17 @@
             <div class="usability-video">
                 <h3>Usability Testing Video</h3>
 
-                <center>
-                    <iframe width="1200" height="675"
-                        src="videos/usabilitytesting.mp4" 
-                        title="Usability Testing Video" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </center>
+                <div class="video-container" style="width: 100%; max-width: 100%;">
+                    <video 
+                        width="100%" 
+                        height="auto"
+                        controls
+                        title="Usability Testing Video"
+                        style="max-width: 100%; height: auto;">
+                        <source src="videos/usabilitytesting.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
                 <p class="video-description">Watch our usability testing process in action (testing the updated website with new BSL button), demonstrating how participants interact with our accessibility prototypes.</p>
             </div>
