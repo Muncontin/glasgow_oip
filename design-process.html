@@ -559,19 +559,101 @@
         </div>
     </section>
 
-    <section id="usability-testing">
-        <h2>Usability Testing</h2>
-        <center>
-            <p>Conducted usability testing with participants using <strong>empathy prototyping</strong> to emulate how
-                visually impaired and deaf users interact with our designs, validating our prototypes and gathering
-                feedback.</p>
-        </center>
-        <br>
-        <center>
-            <a href="https://docs.google.com/document/d/18s8AfbxlT7VzXQcJfBab0kmiNu5tFMvyfy2EjA2BhU4/edit?usp=sharing"
-                target="_blank" class="usability-link">View Usability Testing Document</a>
-        </center>
-        <!-- LINK TO USABILITY TESTING VIDEO -->
+    <section>
+        <div class="container">
+            <h2 class="section-title" id="usability-testing">Usability Testing</h2>
+            <div class="section-intro">
+                <p>Conducted usability testing with participants using <strong>empathy prototyping</strong> to emulate how
+                    visually impaired and deaf users interact with our designs, validating our prototypes and gathering
+                    feedback.</p>
+            </div>
+
+            <div class="usability-test">
+                <h3>Test 1: Accessibility Navigation (BSL Video Access)</h3>
+                <div class="test-details">
+                    <h4>Objective</h4>
+                    <p>To evaluate how intuitively users can locate and access the British Sign Language (BSL) video
+                        from the physical signage and within the prototype website, simulating the experience of a deaf
+                        individual who relies primarily on sign language.</p>
+                    
+                    <h4>Test Scenario</h4>
+                    <p>Participants are shown a signage mock-up containing a QR code. They are asked to scan the
+                        QR code, which redirects them to the prototype website. The interface of the website is
+                        intentionally displayed in Arabic to simulate the experience of a user who does not rely on
+                        written English, representing deaf individuals who prefer sign language over text-based content.</p>
+                    
+                    <h4>Task</h4>
+                    <p>Participants must locate and activate the BSL video button on the webpage, which launches a
+                        sign language translation of the content.</p>
+                    
+                    <h4>Key Findings</h4>
+                    <ul>
+                        <li>The BSL video button on the website was not immediately clear or identifiable to participants</li>
+                        <li>Users typically finish the process between 45-60 seconds</li>
+                        <li>The current BSL icon was too small, making it easy to overlook</li>
+                        <li>The physical signage could be improved by including a brief description next to the QR code, informing users of its purpose (e.g. "Scan for BSL translation of this page")</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="usability-test">
+                <h3>Test 2: Digital Guidebook Accessibility via TalkBack</h3>
+                <div class="test-details">
+                    <h4>Objective</h4>
+                    <p>Evaluate how effectively blind users can access and understand the content in the digital
+                        version of the braille guidebook using TalkBack, simulating the tactile experience through screen
+                        reader navigation.</p>
+                    
+                    <h4>Test Scenario</h4>
+                    <p>Participants are given a tablet or smartphone with the digital guidebook loaded and TalkBack
+                        enabled. They are instructed not to look at the screen (screen hidden or blindfolded) to simulate
+                        the experience of a blind user. The guidebook includes braille representations (visual), textual
+                        descriptions, and image alt-text or ARIA labels that should be read aloud by TalkBack.</p>
+                    
+                    <h4>Tasks</h4>
+                    <ol>
+                        <li>Navigate to and identify the name of the featured plant</li>
+                        <li>Listen to and understand the plant description</li>
+                        <li>Recognize that braille content is present (not read aloud)</li>
+                        <li>Locate and interpret the purpose of the QR code</li>
+                        <li>Summarize what they learned about the plant using only TalkBack</li>
+                    </ol>
+                    
+                    <h4>Key Findings</h4>
+                    <ul>
+                        <li>Participants were unsure about the placement of the QR code, especially when navigating the page non-visually</li>
+                        <li>Users can typically finish navigating through the guidebook up to the QR code section</li>
+                        <li>The QR code text and location were confusing, and lacked clear cues or indicators for blind users</li>
+                        <li>A suggested improvement was to add a raised tactile border around the QR code in the physical guidebook, to make its presence and location perceptible</li>
+                        <li>Despite the QR code issues, participants were generally able to understand the illustration, heading, and plant description using TalkBack</li>
+                        <li>Overall, users could grasp the general content and purpose of the guidebook page, though more explicit directional cues for interactive elements (like QR codes) are needed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="usability-video">
+                <h3>Usability Testing Video</h3>
+
+                <center>
+                    <iframe width="1200" height="675"
+                        src="videos/usabilitytesting.mp4" 
+                        title="Usability Testing Video" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </center>
+
+                <p class="video-description">Watch our usability testing process in action (testing the updated website with new BSL button), demonstrating how participants interact with our accessibility prototypes.</p>
+            </div>
+
+            <div class="document-link">
+                <center>
+                    <a href="Glasgow OIP Usability Testing Steps.pdf"
+                        target="_blank" class="usability-link">View Complete Document</a>
+                </center>
+            </div>
+        </div>
     </section>
 
     <section id="iterative-prototyping-section">

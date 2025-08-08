@@ -991,6 +991,87 @@ footer {
     }
 }
 
+/* Video Container Responsive Styling */
+.video-container {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+}
+
+
+.video-container iframe {
+    width: 100%;
+    max-width: 480px;
+    height: 270px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.02);
+}
+
+/* Portfolio Grid and Video Container Styling */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item h3 {
+  padding: 1rem;
+  margin: 0;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.portfolio-content {
+  padding: 1.5rem;
+}
+
+.portfolio-content h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.portfolio-content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.portfolio-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
@@ -3344,15 +3425,7 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.video-container {
-    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    position: relative;
-}
+
 
 .video-container iframe {
     width: 100%;
@@ -3361,10 +3434,6 @@ footer {
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-}
-
-.video-container iframe:hover {
-    transform: scale(1.02);
 }
 
 .video-placeholder {
@@ -4005,6 +4074,211 @@ footer {
 }
 
 /* Usability Testing Section Styles */
+#usability-testing {
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5f0 100%);
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(74, 124, 89, 0.1);
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+}
+
+#usability-testing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 20px 20px 0 0;
+}
+
+#usability-testing .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+#usability-testing .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f);
+    border-radius: 2px;
+}
+
+#usability-testing .section-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#usability-testing .section-intro p {
+    font-size: 1.2rem;
+    color: #5a6c57;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.usability-test {
+    background: white;
+    margin: 2rem 0;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.usability-test::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 15px 15px 0 0;
+}
+
+.usability-test:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.usability-test h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8f5f0;
+}
+
+.test-details h4 {
+    color: #4a7c59;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.test-details h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(135deg, #4a7c59, #6ba16f);
+    border-radius: 2px;
+}
+
+.test-details p {
+    color: #5a6c57;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.test-details ul, .test-details ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.test-details ul li, .test-details ol li {
+    color: #5a6c57;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.test-details ul li::marker {
+    color: #4a7c59;
+}
+
+.test-details ol li::marker {
+    color: #4a7c59;
+    font-weight: 600;
+}
+
+.test-details ul li:hover, .test-details ol li:hover {
+    color: #2c3e50;
+    transition: color 0.2s ease;
+}
+
+.usability-video {
+    background: white;
+    margin: 2rem 0;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.usability-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4a7c59, #6ba16f, #4a7c59);
+    border-radius: 15px 15px 0 0;
+}
+
+.usability-video:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.usability-video h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8f5f0;
+}
+
+
+
+.usability-video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-description {
+    color: #5a6c57;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.document-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e8f5f0;
+}
+
 .usability-link {
     display: inline-block;
     background: linear-gradient(135deg, #4a7c59, #3a6249);
@@ -4022,6 +4296,49 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);
     background: linear-gradient(135deg, #3a6249, #2a4a39);
+}
+
+/* Responsive Design for Usability Testing */
+@media (max-width: 768px) {
+    #usability-testing {
+        padding: 2rem 1rem;
+        margin: 1rem auto;
+    }
+    
+    #usability-testing .section-title {
+        font-size: 2rem;
+    }
+    
+    .usability-test {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .usability-test h3 {
+        font-size: 1.5rem;
+    }
+    
+    .test-details h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #usability-testing .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .usability-test {
+        padding: 1rem;
+    }
+    
+    .usability-test h3 {
+        font-size: 1.3rem;
+    }
+    
+    .test-details {
+        font-size: 0.9rem;
+    }
 }
 
 /* Iterative Prototyping Section Styles */
@@ -4867,10 +5184,6 @@ footer {
         box-shadow: none;
     }
 
-    .video-container {
-        padding: 1.5rem;
-        min-height: 250px;
-    }
 
     .video-container iframe {
         height: 200px;
@@ -5306,6 +5619,21 @@ footer {
     .toc-link {
         padding: 8px 12px;
         font-size: 0.9rem;
+    }
+    
+    /* Portfolio responsive styles */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .portfolio-item {
+        margin: 0 1rem;
+    }
+    
+    .portfolio-content {
+        padding: 1rem;
     }
 }
 

@@ -172,15 +172,31 @@ class TableOfContents {
     }
     
     updateActiveLink() {
-        const scrollPosition = window.scrollY + 150; // Offset for better UX
+        const scrollPosition = window.scrollY + 200; // Increased offset for better UX
         let activeHeader = null;
         
-        // Find the current section
-        for (let i = this.headers.length - 1; i >= 0; i--) {
+        // Find the current section with improved logic
+        for (let i = 0; i < this.headers.length; i++) {
             const header = this.headers[i];
-            if (header.element.offsetTop <= scrollPosition) {
+            const headerTop = header.element.offsetTop;
+            const nextHeader = this.headers[i + 1];
+            const headerBottom = nextHeader ? nextHeader.element.offsetTop : document.body.scrollHeight;
+            
+            // Check if scroll position is within this section's bounds
+            if (scrollPosition >= headerTop && scrollPosition < headerBottom) {
                 activeHeader = header;
                 break;
+            }
+        }
+        
+        // Fallback: if no section found, use the last passed section
+        if (!activeHeader) {
+            for (let i = this.headers.length - 1; i >= 0; i--) {
+                const header = this.headers[i];
+                if (header.element.offsetTop <= scrollPosition) {
+                    activeHeader = header;
+                    break;
+                }
             }
         }
         
